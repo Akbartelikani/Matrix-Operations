@@ -1,8 +1,8 @@
 //============================================================================
 // Name        : Main.cpp
-// Author      : Mona Roshdibenam.
+// Author      : Akbar Telikani
 // Copyright   : October 2018
-// Description : Object Oriented ProgrammingI by C++     -Fall 2018
+// Description : Object Oriented ProgrammingI by C++
 //============================================================================
 
 #include <iostream>
@@ -296,8 +296,8 @@ void matrix::Menu()
 		system("CLS");
 		cout<<" \n\t\t====================================================";
 	 	cout << "\n\t\t Project     : Matrix Operations";
-	 	cout << "\n\t\t Author      : Mona Roshdibenam";
-	 	cout << "\n\t\t Description : Object Oriented ProgrammingI by C++";
+	 	cout << "\n\t\t Author      : Akbar Telikani";
+	 	cout << "\n\t\t Description : Object Oriented Programming by C++";
 		cout << "\n\t\t Copyright   : October 2018";                                           
 	 	cout<<" \n\t\t====================================================";
 	 	cout << "\n\n\t\t\t  0. Read default Matrixes";
