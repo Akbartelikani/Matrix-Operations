@@ -13,13 +13,10 @@
 using namespace std;
 
 class matrix
-{
-	
+{	
  int a[10][10];
-
  int row;
  int col;
- 
  public:
   		void read(int r, int c);
   		void read1(int r, int c);
@@ -40,18 +37,12 @@ class matrix
   		void Menu();
   		  
 		void setValue(int r,int c) //setter
-		{
-		  row=r;
-		  col=c;
-		}
+		{ row=r;
+		  col=c;}
 		int getrow() 
-		{
-			return row;
-		}
+		{return row;}
 		int getcol() 
-		{
-			return col;
-		}
+		{return col;}
 
 };
 //==============================================================
@@ -64,15 +55,11 @@ void matrix :: read1(int r, int c)
 	 
 	 for(int i=0; i<r; i++)
 	 	for(int j=0; j<c; j++)
-		 {
-		 	
-		 	a[i][j]=1;
-		
-		 }
+		 {a[i][j]=1;}
 		 a[0][3]=-1;
-		  a[1][2]=-1;
-		  a[2][1]=-1;
-		  a[3][0]=-1;
+		 a[1][2]=-1;
+		 a[2][1]=-1;
+		 a[3][0]=-1;
 } 
 //==============================================================
 //     Reading matrixes
@@ -84,12 +71,8 @@ void matrix :: read(int r, int c)
 	 int count=1;
 	 for(int i=0; i<r; i++)
 	 	for(int j=0; j<c; j++)
-		 {
-		 	//a[i][j]=count;
-		 	//count++;
-		  cout<<"A["<<i<<"]["<<j<<"] : ";
-		  cin>>a[i][j];
-		 }
+		 {cout<<"A["<<i<<"]["<<j<<"] : ";
+		  cin>>a[i][j];}
 } 
 //==============================================================
 //     Printing matrixes
@@ -127,11 +110,9 @@ matrix matrix :: multiply (matrix m1, matrix m2)
  	{
  		for(int j=0; j<temp.col; j++)
 	 	{
-	  		temp.a[i][j]=0;
-	  		{            
-			  for (int k=0; k<m1.col; k++)
+	  		temp.a[i][j]=0;        
+			for (int k=0; k<m1.col; k++)
 	    			temp.a[i][j] += m1.a[i][k]*m2.a[k][j];
-	  		}
 	 	}
  	}
  	return temp;
@@ -158,7 +139,6 @@ matrix matrix :: subtraction (matrix m1, matrix m2)
  	matrix temp;
  	temp.row=m1.row;
  	temp.col=m1.col;
- 	
  	for(int i=0; i<temp.row; i++)
  		for(int j=0; j<temp.col; j++)
 	  		temp.a[i][j]= m1.a[i][j]-m2.a[i][j];
@@ -181,9 +161,7 @@ matrix matrix :: TransposeMatrix(matrix m)
 			cout<<setw(4)<<temp.a[i][j];
 		}
 		cout<<"\n";
-	}
-
-				
+	}		
 	return temp;
 }
 //==============================================================
